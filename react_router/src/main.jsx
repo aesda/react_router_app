@@ -12,6 +12,8 @@ import ProjectHome from './pages/ProjectHome.jsx';
 import Project from './pages/Project.jsx';
 import EditProject from './pages/EditProject.jsx';
 import ProjectLayout from './layouts/ProjectLayout.jsx';
+import Contact from './pages/Contact.jsx';
+import ProjectContact from './pages/ProjectContact.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -33,6 +35,8 @@ createRoot(document.getElementById('root')).render(
                   <Route path=":id/edit" element={<EditProject />} />
               </Route>
            </Route>
+           <Route path="contact" element={<Contact />} />
+           <Route path="projectContact" element={<ProjectContact />} />
            
            
         </Routes>
